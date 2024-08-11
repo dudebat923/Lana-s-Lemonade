@@ -1,0 +1,199 @@
+:root {
+    --primary: #bdeb9c;
+    --secondary: #FBEA87;
+    --text: #202020;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+section {
+    padding: 0 5.25rem;
+}
+
+h1 {
+    margin: 0;
+    line-height: 0.9;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-family: junge, sans-serif;
+    font-size: 2.75rem;
+    font-weight: normal;
+    color: var(--text);
+    line-height: 0.9;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+    font-family: junge, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.container {
+    max-width: 1272px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.header-and-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.name-and-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.user-image {
+    border-radius: 1rem;
+    width: 11rem;
+}
+
+.testimonial .user-image {
+    width: 7.75rem;
+}
+
+#hero-section {
+    background-color: var(--primary);
+    padding: 3rem 5.25rem;
+}
+
+#hero-header {
+    font-family: itim, sans-serif;
+    font-size: 6rem;
+    font-weight: 200;
+    color: var(--text);
+}
+
+#hero-subheader {
+    font-family: junge, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 200;
+    color: var(--text);
+}
+
+#hero-image {
+    border-radius: 2.25rem;
+    max-width: 55%;
+}
+
+#about-me-container {
+    align-items: start;
+}
+
+#find-me-section{
+    align-self: center;
+}
+
+#find-me-container {
+    background-color: var(--secondary);
+    border-radius: 2.25rem;
+    padding: 39px 56px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#find-me-container h1 {
+    font-family: itim, sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+    color: var(--text);
+}
+
+#find-me-container h2 {
+    font-family: junge, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 200;
+    color: var(--text);
+    text-decoration: underline;
+}
+
+@media (max-width: 1189px) {
+    #hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-image {
+        max-width: 100%;
+        width: 663px;
+    }
+
+    #about-me-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about-me-header {
+        text-align: center;
+    }
+
+    #review-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 0 2.75rem;
+    }
+
+    #hero-section {
+        padding: 1.5rem 2.75rem;
+    }
+
+    #hero-header {
+        font-size: 4rem;
+    }
+
+    #hero-image {
+        border-radius: 1rem;
+        max-width: 100%;
+    }
+
+    #find-me-container {
+        padding: 20px 28px;
+    }
+
+    #find-me-container h1 {
+        font-size: 2rem;
+    }
+
+    #find-me-container h2 {
+        font-size: 1.12rem;
+    }
+}
